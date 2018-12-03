@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Scrollchor from 'react-scrollchor';
 import './Portfolio.scss';
 
 class Portfolio extends Component {
