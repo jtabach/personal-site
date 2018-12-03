@@ -1,9 +1,37 @@
+@import '../assets/variables.scss';
+
 .navigation-wrapper {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  color: red;
-  background-color: green;
-  height: '48px';
+  color: white;
+  background-color: $dark-gray;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &::after,
+  &::before {
+    display: none !important;
+  }
+  > ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .nav-left {
+    > li {
+      line-height: 1;
+      margin-left: 18px;
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    justify-content: space-between;
+    > li {
+      margin-right: 18px;
+    }
+  }
 }
