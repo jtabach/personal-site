@@ -15,23 +15,11 @@
   &::before {
     display: none !important;
   }
-  > ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
-  }
-  .nav-left {
-    > li {
-      line-height: 1;
-      margin-left: 18px;
-    }
-  }
-
   .nav-right {
     display: flex;
     justify-content: space-between;
     > li {
-      margin-right: 18px;
+      margin-left: 18px;
     }
   }
 }

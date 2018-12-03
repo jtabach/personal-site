@@ -10,7 +10,7 @@ class Navigation extends Component {
   render() {
     return (
       <div className='container-fluid navigation-wrapper'>
-        <ul className='nav-left d-md-none'>
+        <ul className='d-md-none'>
           <li>
             <DrawerToggleButton click={this.props.handleDrawerToggleClick} />
           </li>
@@ -25,9 +25,7 @@ class Navigation extends Component {
           <li>This is navigation</li>
         </ul>
         <ul className='nav-right d-md-none'>
-          <li>
-            <div style={{ height: '20px', width: '18px'}}></div>
-          </li>
+          <div style={{ height: '20px', width: '18px'}}></div>
         </ul>
       </div>
     );
