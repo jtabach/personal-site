@@ -19,7 +19,13 @@ class Header extends Component {
         </ul>
         <ul>
           <li>
-            <Logo />
+            <ScrollItem
+              to="#hero"
+              animate={{ duration: SCROLL_ANIMATION_DURATION }}
+              disableHistory={true}
+            >
+              <Logo />
+            </ScrollItem>
           </li>
         </ul>
         <ul className='header-right d-none d-md-flex'>
@@ -28,24 +34,27 @@ class Header extends Component {
               to="#about"
               animate={{ duration: SCROLL_ANIMATION_DURATION }}
               disableHistory={true}
-              text="About"
-            />
+            >
+              About
+            </ScrollItem>
           </li>
           <li className="header-link">
             <ScrollItem
               to="#portfolio"
               animate={{ duration: SCROLL_ANIMATION_DURATION }}
               disableHistory={true}
-              text="Portfolio"
-            />
+            >
+              Portfolio
+            </ScrollItem>
           </li>
           <li className="header-link">
             <ScrollItem
               to="#contact"
               animate={{ duration: SCROLL_ANIMATION_DURATION }}
               disableHistory={true}
-              text="Contact"
-            />
+            >
+              Contact
+            </ScrollItem>
           </li>
         </ul>
         <ul className='header-right d-md-none'>

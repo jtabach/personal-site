@@ -11,7 +11,14 @@ const SideDrawer = ({ isVisible, onHandleClick }) => {
     <div className={ isVisible ? 'side-drawer-open' : 'side-drawer' }>
       <ul>
         <li className="side-drawer-header">
-          <Logo />
+          <ScrollItem
+            to="#hero"
+            animate={{ duration: SCROLL_ANIMATION_DURATION }}
+            disableHistory={true}
+            beforeAnimate={onHandleClick}
+          >
+            <Logo />
+          </ScrollItem>
         </li>
         <li className="side-drawer-link">
           <ScrollItem
@@ -19,8 +26,9 @@ const SideDrawer = ({ isVisible, onHandleClick }) => {
             animate={{ duration: SCROLL_ANIMATION_DURATION }}
             disableHistory={true}
             beforeAnimate={onHandleClick}
-            text="About"
-          />
+          >
+            About
+          </ScrollItem>
         </li>
         <li className="side-drawer-link">
           <ScrollItem
@@ -28,8 +36,9 @@ const SideDrawer = ({ isVisible, onHandleClick }) => {
             animate={{ duration: SCROLL_ANIMATION_DURATION }}
             disableHistory={true}
             beforeAnimate={onHandleClick}
-            text="Portfolio"
-          />
+          >
+            Portfolio
+          </ScrollItem>
         </li>
         <li className="side-drawer-link">
           <ScrollItem
@@ -37,8 +46,9 @@ const SideDrawer = ({ isVisible, onHandleClick }) => {
             animate={{ duration: SCROLL_ANIMATION_DURATION }}
             disableHistory={true}
             beforeAnimate={onHandleClick}
-            text="Contact"
-          />
+          >
+            Contact
+          </ScrollItem>
         </li>
       </ul>
     </div>

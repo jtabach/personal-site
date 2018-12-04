@@ -4,7 +4,7 @@ import './Hero.scss';
 class Hero extends Component {
   render() {
     return (
-      <div className="hero">
+      <div id="hero" className="hero">
         <img src="https://via.placeholder.com/150x50" alt=""/>
         <h2>Jeff Tabachnick</h2>
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Scrollchor from 'react-scrollchor';
 
-const ScrollItem = ({ to, animate, disableHistory, text, beforeAnimate }) => {
+const ScrollItem = ({ to, animate, disableHistory, beforeAnimate, children }) => {
   return (
     <Scrollchor
       to={to}
@@ -10,7 +10,7 @@ const ScrollItem = ({ to, animate, disableHistory, text, beforeAnimate }) => {
       disableHistory={disableHistory}
       beforeAnimate={beforeAnimate}
     >
-      {text}
+      {children}
     </Scrollchor>
   );
 }
