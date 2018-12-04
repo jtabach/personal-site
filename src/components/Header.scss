@@ -1,5 +1,7 @@
 @import '../assets/variables.scss';
 
+
+
 .header-wrapper {
   position: fixed;
   top: 0;
@@ -7,14 +9,20 @@
   width: 100%;
   color: white;
   background-color: $dark-gray;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  z-index: 150;
   &::after,
   &::before {
     display: none !important;
   }
+  &__contain {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin: 0 auto;
+  }
+
   .header-right {
     display: flex;
     justify-content: space-between;

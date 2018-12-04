@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 
 import NavLayout from './layouts/NavLayout';
 import Hero from './components/Hero';
