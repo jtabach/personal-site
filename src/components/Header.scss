@@ -18,8 +18,13 @@
   .header-right {
     display: flex;
     justify-content: space-between;
-    > li {
-      margin-left: 18px;
+    .header-link {
+      margin-left: 48px;
+      color: white;
+      &:hover {
+        text-decoration: none;
+        color: gray;
+      }
     }
   }
 }

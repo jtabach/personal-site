@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import Scrollchor from 'react-scrollchor';
 import './Header.scss';
 
 import DrawerToggleButton from './DrawerToggleButton';
 
 import JNTImage from '../assets/images/jnt.png';
+
+const SCROLL_ANIMATION_DURATION = 500;
 
 class Header extends Component {
 
@@ -21,8 +24,36 @@ class Header extends Component {
           </li>
         </ul>
         <ul className='header-right d-none d-md-flex'>
-          <li>some text</li>
-          <li>This is navigation</li>
+          <li>
+            <Scrollchor
+              to="#about"
+              className="header-link"
+              animate={{ duration: SCROLL_ANIMATION_DURATION }}
+              disableHistory={true}
+            >
+              About
+            </Scrollchor>
+          </li>
+          <li>
+            <Scrollchor
+              to="#portfolio"
+              className="header-link"
+              animate={{ duration: SCROLL_ANIMATION_DURATION }}
+              disableHistory={true}
+            >
+              Portfolio
+          </Scrollchor>
+          </li>
+          <li>
+            <Scrollchor
+              to="#contact"
+              className="header-link"
+              animate={{ duration: SCROLL_ANIMATION_DURATION }}
+              disableHistory={true}
+            >
+              Contact
+            </Scrollchor>
+          </li>
         </ul>
         <ul className='header-right d-md-none'>
           <div style={{ height: '20px', width: '18px'}}></div>
