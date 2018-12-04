@@ -3,6 +3,7 @@ import Scrollchor from 'react-scrollchor';
 import './Header.scss';
 
 import DrawerToggleButton from './DrawerToggleButton';
+import Logo from './common/Logo';
 
 import JNTImage from '../assets/images/jnt.png';
 
@@ -20,7 +21,7 @@ class Header extends Component {
         </ul>
         <ul>
           <li>
-            <img src={JNTImage} alt="Personal Logo" style={{ height: '32px' }}/>
+            <Logo />
           </li>
         </ul>
         <ul className='header-right d-none d-md-flex'>
