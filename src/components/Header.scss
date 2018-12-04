@@ -19,11 +19,13 @@
     display: flex;
     justify-content: space-between;
     .header-link {
-      margin-left: 48px;
-      color: white;
-      &:hover {
-        text-decoration: none;
-        color: gray;
+      > a {
+        margin-left: 48px;
+        color: white;
+        &:hover {
+          text-decoration: none;
+          color: gray;
+        }
       }
     }
   }
