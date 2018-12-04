@@ -1,20 +1,48 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './SideDrawer.scss';
 
-class SideDrawer extends Component {
+import ScrollItem from './common/ScrollItem';
+import Logo from './common/Logo';
 
-  render() {
-    const { isVisible } = this.props;
+const SCROLL_ANIMATION_DURATION = 500;
 
-    return (
-      <div className={isVisible ? 'side-drawer-open' : 'side-drawer'}>
-        <ul>
-          <li>link1 </li>
-          <li>link2 </li>
-        </ul>
-      </div>
-    );
-  }
+const SideDrawer = ({ isVisible, onHandleClick }) => {
+  return (
+    <div className={ isVisible ? 'side-drawer-open' : 'side-drawer' }>
+      <ul>
+        <li className="side-drawer-header">
+          <Logo />
+        </li>
+        <li className="side-drawer-link">
+          <ScrollItem
+            to="#about"
+            animate={{ duration: SCROLL_ANIMATION_DURATION }}
+            disableHistory={true}
+            beforeAnimate={onHandleClick}
+            text="About"
+          />
+        </li>
+        <li className="side-drawer-link">
+          <ScrollItem
+            to="#portfolio"
+            animate={{ duration: SCROLL_ANIMATION_DURATION }}
+            disableHistory={true}
+            beforeAnimate={onHandleClick}
+            text="Portfolio"
+          />
+        </li>
+        <li className="side-drawer-link">
+          <ScrollItem
+            to="#contact"
+            animate={{ duration: SCROLL_ANIMATION_DURATION }}
+            disableHistory={true}
+            beforeAnimate={onHandleClick}
+            text="Contact"
+          />
+        </li>
+      </ul>
+    </div>
+  );
 }
 
 

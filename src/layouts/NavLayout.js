@@ -28,7 +28,7 @@ class NavLayout extends Component {
     return (
       <div style={{ height: '100%' }}>
         <Header handleDrawerToggleClick={this.handleDrawerToggleClick} />
-        <SideDrawer isVisible={this.state.isSideDrawerOpen} />
+        <SideDrawer isVisible={this.state.isSideDrawerOpen} onHandleClick={this.handleDrawerToggleClick} />
         {backDrop}
         {this.props.children}
       </div>
