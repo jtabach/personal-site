@@ -5,8 +5,8 @@ class Hero extends Component {
   render() {
     return (
       <div id="hero" className="hero">
-        <img src="https://via.placeholder.com/150x50" alt=""/>
-        <h2>Jeff Tabachnick</h2>
+        <h1>Jeff Tabachnick</h1>
+        <h4>Front End Engineer &amp; Architect</h4>
       </div>
     );
   }

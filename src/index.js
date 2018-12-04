@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import './assets/reset.scss';
+import 'typeface-open-sans';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
