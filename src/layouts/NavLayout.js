@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import Navigation from './Navigation';
-import SideDrawer from './SideDrawer';
-import BackDrop from './BackDrop';
+import Header from '../components/Header';
+import SideDrawer from '../components/SideDrawer';
+import BackDrop from '../components/BackDrop';
 
 class NavLayout extends Component {
   state = {
@@ -27,9 +27,10 @@ class NavLayout extends Component {
     }
     return (
       <div style={{ height: '100%' }}>
-        <Navigation handleDrawerToggleClick={this.handleDrawerToggleClick} />
+        <Header handleDrawerToggleClick={this.handleDrawerToggleClick} />
         <SideDrawer isVisible={this.state.isSideDrawerOpen} />
         {backDrop}
+        {this.props.children}
       </div>
     );
   }

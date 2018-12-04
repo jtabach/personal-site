@@ -1,6 +1,6 @@
 @import '../assets/variables.scss';
 
-.navigation-wrapper {
+.header-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +15,7 @@
   &::before {
     display: none !important;
   }
-  .nav-right {
+  .header-right {
     display: flex;
     justify-content: space-between;
     > li {

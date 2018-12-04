@@ -5,7 +5,6 @@ class SideDrawer extends Component {
 
   render() {
     const { isVisible } = this.props;
-    console.log(isVisible);
 
     return (
       <div className={isVisible ? 'side-drawer-open' : 'side-drawer'}>

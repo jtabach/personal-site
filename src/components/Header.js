@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import './Navigation.scss';
+import './Header.scss';
 
 import DrawerToggleButton from './DrawerToggleButton';
 
 import JNTImage from '../assets/images/jnt.png';
 
-class Navigation extends Component {
+class Header extends Component {
 
   render() {
     return (
-      <div className='container-fluid navigation-wrapper'>
+      <div className='container-fluid header-wrapper'>
         <ul className='d-md-none'>
           <li>
             <DrawerToggleButton click={this.props.handleDrawerToggleClick} />
@@ -20,11 +20,11 @@ class Navigation extends Component {
             <img src={JNTImage} alt="Personal Logo" style={{ height: '32px' }}/>
           </li>
         </ul>
-        <ul className='nav-right d-none d-md-flex'>
+        <ul className='header-right d-none d-md-flex'>
           <li>some text</li>
           <li>This is navigation</li>
         </ul>
-        <ul className='nav-right d-md-none'>
+        <ul className='header-right d-md-none'>
           <div style={{ height: '20px', width: '18px'}}></div>
         </ul>
       </div>
@@ -32,4 +32,4 @@ class Navigation extends Component {
   }
 }
 
-export default Navigation;
+export default Header;
